@@ -4,10 +4,11 @@
 
 brew cask install iterm2
 brew cask install opera
-brew casr install google-chrome
+brew cask install google-chrome
 brew cask install evernote
 brew cask install dropbox
 
+brew install ag
 
 #copy the ssh key from dropbox folder
 mkdir -p ~/.ssh; chmod 700 ~/.ssh
