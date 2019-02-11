@@ -11,4 +11,5 @@ set textwidth=200
 set termguicolors
 
 colorscheme gruvbox
+set background=dark
 
