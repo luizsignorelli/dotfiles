@@ -1,0 +1,6 @@
+" extra plugins
+Plug 'tpope/vim-sensible'
+
+" colorschemes
+Plug 'morhetz/gruvbox'
+

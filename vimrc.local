@@ -1,6 +1,14 @@
+" make ale run only the linters defined here
 let g:ale_linters_explicit = 1
 let g:ale_linters = {
 \   'javascript': ['eslint'],
 \}
 
+" put the limit line at 200
 set textwidth=200
+
+" neovim true colors
+set termguicolors
+
+colorscheme gruvbox
+
