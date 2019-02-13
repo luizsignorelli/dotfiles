@@ -1,5 +1,18 @@
-" maps enter to :w (copied from luan/vimfiles)
+" luan/vimfiles inspired {{{
+
+" save file
 nnoremap <Leader>s :w<CR>
+
+" move to the next and previous buffer
+nnoremap <silent> <leader>z :bp<CR>
+nnoremap <silent> <leader>x :bn<CR>
+
+" Window Splitting
+nmap <silent> <leader>hs :split<CR>
+nmap <silent> <leader>vs :vsplit<CR>
+nmap <silent> <leader>sc :close<CR>
+
+" }}}
 
 " make ale run only the linters defined here
 let g:ale_linters_explicit = 1
