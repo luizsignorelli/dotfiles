@@ -1,5 +1,6 @@
 " extra plugins
 Plug 'tpope/vim-sensible'
+Plug 'vim-airline/vim-airline'
 
 " more languages
 Plug 'leafgarland/typescript-vim'

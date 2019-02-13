@@ -14,7 +14,11 @@ set textwidth=200
 " neovim true colors
 set termguicolors
 
+" colorscheme
 let g:gruvbox_italic=1
 colorscheme gruvbox
 set background=dark
 
+
+" airline
+let g:airline#extensions#tabline#enabled = 1
