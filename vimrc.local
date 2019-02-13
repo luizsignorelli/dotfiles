@@ -1,3 +1,6 @@
+" maps enter to :w (copied from luan/vimfiles)
+nnoremap <Leader>s :w<CR>
+
 " make ale run only the linters defined here
 let g:ale_linters_explicit = 1
 let g:ale_linters = {
