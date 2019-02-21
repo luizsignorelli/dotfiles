@@ -28,6 +28,9 @@ let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 " put the limit line at 200
 set textwidth=200
 
+" remove trailing spaces
+au BufWrite * %s/\s\+$//ge
+
 " neovim true colors
 set termguicolors
 
