@@ -9,6 +9,8 @@ nnoremap <Leader>s :w<CR>
 nnoremap <silent> <leader>z :bp<CR>
 nnoremap <silent> <leader>x :bn<CR>
 
+nnoremap <silent> <leader>bd :bd<CR>
+
 " Window Splitting
 nmap <silent> <leader>hs :split<CR>
 nmap <silent> <leader>vs :vsplit<CR>
