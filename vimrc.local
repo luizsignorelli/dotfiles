@@ -46,3 +46,9 @@ set background=dark
 
 " airline
 let g:airline#extensions#tabline#enabled = 1
+
+" git
+nnoremap <silent> <leader>gb :Gblame<CR>
+
+set foldmethod=indent
+set foldlevel=5
