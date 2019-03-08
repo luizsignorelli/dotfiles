@@ -52,3 +52,7 @@ nnoremap <silent> <leader>gb :Gblame<CR>
 
 set foldmethod=indent
 set foldlevel=5
+
+" autoload file changes
+set autoread
+au FocusGained,BufEnter * :checktime
