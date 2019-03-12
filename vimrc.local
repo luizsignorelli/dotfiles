@@ -56,3 +56,6 @@ set foldlevel=5
 " autoload file changes
 set autoread
 au FocusGained,BufEnter * :checktime
+
+" clear sarch highlight
+nnoremap <silent> <leader>cs :noh<CR>
