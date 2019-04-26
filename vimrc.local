@@ -66,3 +66,5 @@ au FocusGained,BufEnter * :checktime
 
 " clear sarch highlight
 nnoremap <silent> <leader>cs :noh<CR>
+
+let test#ruby#rspec#executable = 'zeus rspec'
