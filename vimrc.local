@@ -9,6 +9,7 @@ nnoremap <Leader>s :w<CR>
 nnoremap <silent> <leader>z :bp<CR>
 nnoremap <silent> <leader>x :bn<CR>
 
+" Close current buffer
 nnoremap <silent> <leader>bd :bd<CR>
 
 " Window Splitting
@@ -16,6 +17,8 @@ nmap <silent> <leader>hs :split<CR>
 nmap <silent> <leader>vs :vsplit<CR>
 nmap <silent> <leader>sc :close<CR>
 
+" Y in visual mode copies to system clipboard
+vmap Y "+y
 " }}}
 
 " make ale run only the linters defined here
