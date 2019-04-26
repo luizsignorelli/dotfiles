@@ -68,3 +68,5 @@ au FocusGained,BufEnter * :checktime
 nnoremap <silent> <leader>cs :noh<CR>
 
 let test#ruby#rspec#executable = 'zeus rspec'
+
+let g:ctrlp_cmd = 'CtrlPMixed'
