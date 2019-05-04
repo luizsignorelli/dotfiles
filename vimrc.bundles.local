@@ -10,3 +10,6 @@ Plug 'peitalin/vim-jsx-typescript'
 " colorschemes
 Plug 'morhetz/gruvbox'
 
+" import-js
+Plug 'Galooshi/vim-import-js'
+
