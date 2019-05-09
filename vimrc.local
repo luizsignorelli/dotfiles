@@ -77,3 +77,8 @@ set relativenumber
 " bind K to grep word under cursor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
+" Quickfix
+nnoremap <silent> <leader>qo :copen<CR>
+nnoremap <silent> <leader>qc :cclose<CR>
+nnoremap <silent> <leader>qj :cnext<CR>
+nnoremap <silent> <leader>qk :cprevious<CR>
