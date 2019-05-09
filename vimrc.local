@@ -73,3 +73,7 @@ let test#ruby#rspec#executable = 'zeus rspec'
 let g:ctrlp_cmd = 'CtrlPMixed'
 
 set relativenumber
+
+" bind K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
