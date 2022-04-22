@@ -1,3 +1,4 @@
-ruby 2.3.6
-nodejs 8.10.0
+ruby 3.0.2
+nodejs 12.13.1
 golang 1.12
+java adopt-openjdk-8u222-b10

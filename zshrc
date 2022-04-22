@@ -17,6 +17,7 @@ plugins=(
   git
   ruby
   zsh-autosuggestions
+  asdf
 )
 
 source $ZSH/oh-my-zsh.sh

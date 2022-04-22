@@ -13,3 +13,4 @@ Plug 'morhetz/gruvbox'
 " import-js
 Plug 'Galooshi/vim-import-js'
 
+Plug 'mattn/emmet-vim'

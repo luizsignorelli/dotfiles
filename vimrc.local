@@ -82,3 +82,12 @@ nnoremap <silent> <leader>qo :copen<CR>
 nnoremap <silent> <leader>qc :cclose<CR>
 nnoremap <silent> <leader>qj :cnext<CR>
 nnoremap <silent> <leader>qk :cprevious<CR>
+
+" Emmet
+:imap ,, <C-y>,
+
+" Go beginning end of line in insert mode
+inoremap <C-a> <C-o>0
+
+" Go to end of line in insert mode
+inoremap <C-e> <C-o>$
