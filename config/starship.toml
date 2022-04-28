@@ -1,0 +1,42 @@
+# Make prompt a single line instead of two lines
+[line_break]
+disabled = true
+
+[character]
+success_symbol = " [❯](bold green)"
+error_symbol = " [❯](bold red)"
+
+
+[cmd_duration]
+format = '\[[⏱ $duration]($style)\]'
+
+[docker_context]
+format = '\[[$symbol$context]($style)\]'
+
+[elixir]
+format = '\[[$symbol($version \(OTP $otp_version\))]($style)\]'
+
+[git_branch]
+format = '\[[$branch]($style)\]'
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style))'
+
+[memory_usage]
+format = '\[$symbol[$ram( | $swap)]($style)\]'
+
+[nodejs]
+format = '\[[($version)]($style)\]'
+
+[package]
+format = '\[[$symbol$version]($style)\]'
+
+[ruby]
+format = '\[[($version)]($style)\]'
+
+[sudo]
+format = '\[[as $symbol]\]'
+
+[username]
+format = '\[[$user]($style)\]'
+
