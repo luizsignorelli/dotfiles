@@ -11,3 +11,14 @@ defaults write com.apple.Accessibility KeyRepeatInterval -float 0.03333333299999
 # trackpad
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -int 1
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -int 1
+
+
+mkdir ~/Library/KeyBindings
+touch ~/Library/KeyBindings/DefaultKeyBinding.dict
+echo 'Remove anoying beep when changing tabs on Rubymine
+Add this JSON to ~/Library/KeyBindings/DefaultKeyBinding.dict
+{
+    "@^\UF701" = "noop:";
+    "@^\UF702" = "noop:";
+    "@^\UF703" = "noop:";
+}'
