@@ -4,6 +4,8 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 eval "$(starship init zsh)"
 
+export SAVEHIST=999999999999
+
 #
 # Aliases
 # (sorted alphabetically)
