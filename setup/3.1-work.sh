@@ -5,7 +5,7 @@ bundle lock --add-platform arm64-darwin
 
 # for pg gem
 brew install libpq
-echo 'export PATH="/opt/homebrew/opt/libpq/bin:$PATH"' >> .zprofile
+echo 'export PATH="/opt/homebrew/opt/libpq/bin:$PATH"' >> ~/.zprofile
 
 # pgcli > better psql
 brew install pgcli
