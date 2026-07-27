@@ -1,0 +1,15 @@
+# Sourced by thoughtbot's ~/.aliases, which loads after ~/.zshrc.local.
+# thoughtbot already provides: ll, ln, mkdir, e, v, b, s, migrate, path, ...
+
+# Git
+alias gc='git commit -v'
+alias gcb='git checkout -b'
+alias gco='git checkout'
+alias gl='git pull'
+alias glog='git log --oneline --decorate --graph'
+alias gst='git status'
+
+# Push/pull the current branch to origin.
+# git_current_branch is defined in zshrc.local.
+alias ggpull='git pull origin "$(git_current_branch)"'
+alias ggpush='git push origin "$(git_current_branch)"'
