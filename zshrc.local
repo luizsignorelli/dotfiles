@@ -10,6 +10,12 @@ eval "$(starship init zsh)"
 HISTSIZE=1000000
 SAVEHIST=1000000
 
+# libpq, for the pg gem. Installed by setup/3.1-work.sh, so guard it -- this
+# file is shared with machines that never run that script.
+if [ -d /opt/homebrew/opt/libpq/bin ]; then
+  export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+fi
+
 # Used by the ggpull/ggpush aliases in aliases.local.
 # (vendored from oh-my-zsh's git plugin)
 function git_current_branch() {

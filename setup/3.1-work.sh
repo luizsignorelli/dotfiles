@@ -3,9 +3,9 @@
 cd ~/workspace/adquick
 bundle lock --add-platform arm64-darwin
 
-# for pg gem
+# for pg gem. The PATH entry lives in zshrc.local -- ~/.zprofile is a symlink
+# into the thoughtbot clone, so appending to it would dirty that repo.
 brew install libpq
-echo 'export PATH="/opt/homebrew/opt/libpq/bin:$PATH"' >> ~/.zprofile
 
 # pgcli > better psql
 brew install pgcli
