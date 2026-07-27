@@ -1,3 +1,7 @@
-EXCLUDES="*.md LICENSE CODEOWNERS setup"
-DOTFILES_DIRS="$HOME/dotfiles-local $HOME/dotfiles"
-COPY_ALWAYS="git_template/HEAD"
+# Sourced as POSIX shell by lsrc/mkrc/rcdn/rcup -- see rcrc(5). Start from
+# thoughtbot's config so their EXCLUDES/DOTFILES_DIRS stay in sync, then add
+# ours on top. Duplicating their values here is how CODEOWNERS drifted out.
+. "$HOME/dotfiles/rcrc"
+
+# setup/ holds provisioning scripts, not dotfiles -- don't link it to ~/.setup.
+EXCLUDES="$EXCLUDES setup"
