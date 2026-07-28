@@ -5,6 +5,7 @@
 alias gc='git commit -v'
 alias gcb='git checkout -b'
 alias gco='git checkout'
+alias gd='git diff'
 alias gl='git pull'
 alias glog='git log --oneline --decorate --graph'
 alias gst='git status'
