@@ -1,7 +1,6 @@
 #!/bin/sh
 
-cd ~/workspace/adquick
-bundle lock --add-platform arm64-darwin
+set -eu
 
 # for pg gem. The PATH entry lives in zshrc.local -- ~/.zprofile is a symlink
 # into the thoughtbot clone, so appending to it would dirty that repo.
