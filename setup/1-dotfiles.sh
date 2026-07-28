@@ -1,7 +1,16 @@
 #!/bin/sh
 
-git clone git@github.com:thoughtbot/dotfiles.git ~/dotfiles
-git clone git@github.com:luizsignorelli/dotfiles.git ~/dotfiles-local
+set -eu
+
+# Guarded on .git rather than the directory, so a re-run is a no-op but a
+# half-created ~/dotfiles fails loudly on the clone instead of being skipped.
+if [ ! -d ~/dotfiles/.git ]; then
+  git clone git@github.com:thoughtbot/dotfiles.git ~/dotfiles
+fi
+
+if [ ! -d ~/dotfiles-local/.git ]; then
+  git clone git@github.com:luizsignorelli/dotfiles.git ~/dotfiles-local
+fi
 
 brew install zsh-autosuggestions
 brew install rcm
@@ -17,4 +26,3 @@ brew install fzf
 # plus an exclude for setup/, which otherwise gets linked into ~/.setup.
 # Only matters on this first run -- rcup links ours to ~/.rcrc for later ones.
 env RCRC=$HOME/dotfiles-local/rcrc rcup
-
