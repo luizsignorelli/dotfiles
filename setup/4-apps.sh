@@ -25,7 +25,7 @@ brew install --cask cursor-cli
 brew install --cask whatsapp
 brew install --cask zoom
 
-# Everything else
-brew install --cask dropbox
+# Everything else. Dropbox is installed in 0-initial.sh, ahead of the ssh key
+# restore that reads from it.
 brew install --cask github
 brew install --cask microsoft-office
