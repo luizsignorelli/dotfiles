@@ -4,6 +4,10 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 eval "$(starship init zsh)"
 
+# mise, replacing asdf. Safe anywhere in this file -- thoughtbot's zshrc
+# prepends the legacy ~/.asdf/shims to PATH before sourcing us, so mise wins.
+eval "$(mise activate zsh)"
+
 # Deep shell history. thoughtbot's zsh/configs/history.zsh sets both of these to
 # 32768 and loads before this file. zsh only writes out what HISTSIZE holds in
 # memory, so raising SAVEHIST alone does nothing -- both have to go up.

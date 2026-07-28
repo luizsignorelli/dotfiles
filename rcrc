@@ -4,4 +4,5 @@
 . "$HOME/dotfiles/rcrc"
 
 # setup/ holds provisioning scripts, not dotfiles -- don't link it to ~/.setup.
-EXCLUDES="$EXCLUDES setup"
+# asdfrc is thoughtbot's and meaningless now that we use mise.
+EXCLUDES="$EXCLUDES setup asdfrc"

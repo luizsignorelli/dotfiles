@@ -1,0 +1,13 @@
+[tools]
+ruby = "4.0"
+node = "24"
+# The `yarn` npm package is still 1.x -- Yarn 2+ ships via corepack. Pinning to
+# 1 keeps what `npm install --global yarn` used to give us, and installing it as
+# a mise tool means it survives node upgrades.
+"npm:yarn" = "1"
+
+[settings]
+# asdf read .ruby-version/.nvmrc via thoughtbot's asdfrc (legacy_version_file =
+# yes). mise disables this by default, so turn it back on -- without it a repo
+# with a bare .ruby-version silently falls back to the global ruby above.
+idiomatic_version_file_enable_tools = ["ruby", "node"]
