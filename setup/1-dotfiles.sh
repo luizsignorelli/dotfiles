@@ -2,15 +2,27 @@
 
 set -eu
 
-# Guarded on .git rather than the directory, so a re-run is a no-op but a
-# half-created ~/dotfiles fails loudly on the clone instead of being skipped.
-if [ ! -d ~/dotfiles/.git ]; then
-  git clone git@github.com:thoughtbot/dotfiles.git ~/dotfiles
-fi
+# Clone if missing, otherwise fast-forward. Guarded on .git rather than the
+# directory so a half-created clone fails loudly instead of being skipped.
+#
+# A dirty clone is left alone rather than pulled: tools that write through the
+# ~/.zshrc symlink can leave stray edits in the thoughtbot clone (fzf's
+# installer used to), and a failed merge mid-setup is a bad way to find out.
+sync_repo() {
+  url=$1
+  dir=$2
 
-if [ ! -d ~/dotfiles-local/.git ]; then
-  git clone git@github.com:luizsignorelli/dotfiles.git ~/dotfiles-local
-fi
+  if [ ! -d "$dir/.git" ]; then
+    git clone "$url" "$dir"
+  elif [ -n "$(git -C "$dir" status --porcelain)" ]; then
+    echo "$dir has local changes -- skipping pull"
+  else
+    git -C "$dir" pull --ff-only
+  fi
+}
+
+sync_repo git@github.com:thoughtbot/dotfiles.git ~/dotfiles
+sync_repo git@github.com:luizsignorelli/dotfiles.git ~/dotfiles-local
 
 brew install zsh-autosuggestions
 brew install rcm
