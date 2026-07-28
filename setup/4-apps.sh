@@ -26,7 +26,8 @@ brew install --cask slack
 brew install --cask whatsapp
 brew install --cask zoom
 
-# Everything else. Dropbox is installed in 0-initial.sh, ahead of the ssh key
-# restore that reads from it.
+# Everything else. The 1Password app and Dropbox are installed in 0-initial.sh,
+# ahead of the ssh key restore that reads from them.
+brew install --cask 1password-cli
 brew install --cask github
 brew install --cask microsoft-office
