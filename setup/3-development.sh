@@ -14,11 +14,3 @@ brew install libffi libyaml openssl@3 readline zlib
 
 # Installs everything pinned in ~/.config/mise/config.toml.
 mise install
-
-# Editors and AI tooling
-brew install --cask claude
-brew install --cask claude-code
-brew install --cask cursor
-brew install --cask cursor-cli
-brew install --cask chatgpt
-brew install --cask codex
