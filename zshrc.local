@@ -2,8 +2,6 @@ bindkey "^[[3~" delete-char
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-eval "$(starship init zsh)"
-
 # mise, replacing asdf. Safe anywhere in this file -- thoughtbot's zshrc
 # prepends the legacy ~/.asdf/shims to PATH before sourcing us, so mise wins.
 eval "$(mise activate zsh)"
