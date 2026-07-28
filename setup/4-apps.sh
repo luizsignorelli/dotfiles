@@ -22,6 +22,7 @@ brew install --cask cursor
 brew install --cask cursor-cli
 
 # Communication
+brew install --cask slack
 brew install --cask whatsapp
 brew install --cask zoom
 
