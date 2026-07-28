@@ -29,6 +29,11 @@ fi
 
 brew install git
 
+# Needed before the ssh key restore below: the key comes out of Dropbox, and
+# 1Password holds the credentials to get into both.
+brew install --cask 1password
+brew install --cask dropbox
+
 echo "Next steps:"
 echo "  - Configure your ssh key"
 echo "  - Run setup/1-dotfiles.sh"

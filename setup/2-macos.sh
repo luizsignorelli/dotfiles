@@ -12,6 +12,14 @@ defaults write com.apple.Accessibility KeyRepeatInterval -float 0.03333333299999
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -int 1
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -int 1
 
+# Apps
+brew install --cask itsycal
+brew install --cask rectangle
+brew install --cask ghostty
+brew install --cask whatsapp
+brew install --cask microsoft-office
+brew install --cask google-chrome
+brew install --cask arc
 
 mkdir ~/Library/KeyBindings
 touch ~/Library/KeyBindings/DefaultKeyBinding.dict
